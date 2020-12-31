@@ -6,7 +6,7 @@ http://ionicframework.com/docs/theming/ */
 
 :root {
     /** primary **/
-    --ion-color-primary: #36ecde;
+    --ion-color-primary: #4854e0;
     --ion-color-primary-rgb: 255, 196, 9;
     --ion-color-primary-contrast: #000000;
     --ion-color-primary-contrast-rgb: 0, 0, 0;
@@ -196,5 +196,11 @@ http://ionicframework.com/docs/theming/ */
         --ion-toolbar-background: #1f1f1f;
         --ion-tab-bar-background: #1f1f1f;
         --ion-card-background: #1e1e1e;
+    }
+    .IonCardStyle {
+        margin: 0%;
+        width: auto;
+        height: 100%;
+        text-align: center;
     }
 }

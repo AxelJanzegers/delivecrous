@@ -1,11 +1,12 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonGrid, IonRow, IonCol, IonRouterLink} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonGrid, IonRow, IonCol, IonRouterLink, IonIcon } from '@ionic/react';
 import './Tab1.css';
+import { eye } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader collapse="condense">
+      <IonHeader>
         <IonToolbar>
           <IonTitle class="IonTitleStyle">DeliveYourMusic</IonTitle>
         </IonToolbar>
@@ -16,7 +17,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/bose700.jpg" alt="" />
-                <IonRouterLink href="tab3"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="tab3">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                Fiche Produit
+                 </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> Bose Headphones 700</IonCardSubtitle>
                   <IonCardTitle> 399.95 €</IonCardTitle>
@@ -29,7 +33,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/boseEarBudsQC.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                Fiche Produit
+                 </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> Bose EarBuds QC</IonCardSubtitle>
                   <IonCardTitle> 279.99 €</IonCardTitle>
@@ -44,7 +51,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/sonyXm4.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                Fiche Produit
+                </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> Sony Headphones XM4</IonCardSubtitle>
                   <IonCardTitle> 349.99 €</IonCardTitle>
@@ -57,7 +67,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/sonyEarBudsXm3.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                Fiche Produit
+                 </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> Sony EarBuds XM3</IonCardSubtitle>
                   <IonCardTitle> 199.95 €</IonCardTitle>
@@ -72,7 +85,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/airPodMax.jpg" alt="" />
-                <IonRouterLink href="#" class="IonRonterLinkStyle"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                Fiche Produit
+                </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> AirPods Max</IonCardSubtitle>
                   <IonCardTitle> 629.00 €</IonCardTitle>
@@ -85,7 +101,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/airPodPro.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                 Fiche Produit
+                  </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> AirPods Pro</IonCardSubtitle>
                   <IonCardTitle> 279.00 €</IonCardTitle>
@@ -100,7 +119,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/airPod.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                   Fiche Produit
+                   </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> AirPods</IonCardSubtitle>
                   <IonCardTitle> 179.00 €</IonCardTitle>
@@ -113,7 +135,10 @@ const Tab1: React.FC = () => {
             <IonCol>
               <IonCard class="IonCardStyle">
                 <img src="./assets/galaxyBuds.jpg" alt="" />
-                <IonRouterLink href="#"> View </IonRouterLink>
+                <IonRouterLink class="IonRouterLinkStyle" href="#">
+                  <IonIcon class="IonIconStyle" icon={eye} />
+                 Fiche Produit
+                 </IonRouterLink>
                 <IonCardHeader>
                   <IonCardSubtitle> Galaxy Buds</IonCardSubtitle>
                   <IonCardTitle> 149.00 €</IonCardTitle>

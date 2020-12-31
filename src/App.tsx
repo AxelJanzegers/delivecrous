@@ -51,7 +51,6 @@ const App: React.FC = () => (
             <IonIcon icon={basket}/>
             <IonLabel>Panier</IonLabel>
           </IonTabButton>
-
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>

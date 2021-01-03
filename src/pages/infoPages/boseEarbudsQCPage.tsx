@@ -1,8 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonText } from '@ionic/react';
-import './Tab3.css';
+import '../stylePage/infoPage.css';
 
-const AirPodsMaxPage: React.FC = () => {
+const BoseEarBudsQCPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,15 +11,15 @@ const AirPodsMaxPage: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="IonContentStyle">
-        <IonImg src="./assets/airPodMax.jpg" />
-        <h1> AirPods Max </h1>
-        <h3> 629.00€ </h3>
+        <IonImg src="./assets/boseEarBudsQC.jpg" />
+        <h1> EarBuds QC </h1>
+        <h3> 279.99€ </h3>
         <IonText class="IonTextStyle">
-        Haut de gamme et haute fidélité, le dernier-né de la gamme AirPods affiche un prix qui en fera ciller plus d’un, mais promet la simplicité et le confort d’utilisation des autres casques sans-fil d’Apple, avec un son hors norme.
+        Les Bose QuietComfort Earbuds sont les premiers écouteurs true wireless avec réduction de bruit active du constructeur américain. 
          </IonText>
       </IonContent>
     </IonPage>
   );
 };
 
-export default AirPodsMaxPage;
+export default BoseEarBudsQCPage;

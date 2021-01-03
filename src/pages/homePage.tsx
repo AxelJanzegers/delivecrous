@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonGrid, IonRow, IonCol, IonRouterLink, IonIcon, IonCheckbox } from '@ionic/react';
-import './Tab1.css';
+import './stylePage/homePage.css';
 import { eye } from 'ionicons/icons';
 import { Plugins } from "@capacitor/core";
 
 const { Storage } = Plugins;
 const checkboxList = [false, false, false, false, false, false, false, false];
 
-const Tab1: React.FC = () => {
+const HomePage: React.FC = () => {
 
   return (
     <IonPage>
@@ -21,7 +21,7 @@ const Tab1: React.FC = () => {
           <IonRow>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(0) }}/>
+              <IonCheckbox color="secondary" onIonChange= {e => { check(0) }}/>
                 <img src="./assets/bose700.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="bose700Page">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -38,7 +38,7 @@ const Tab1: React.FC = () => {
             </IonCol>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(1) }}/>
+              <IonCheckbox color="secondary" onIonChange= {e => { check(1) }}/>
                 <img src="./assets/boseEarBudsQC.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="boseEarBudsQCPage">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -57,7 +57,7 @@ const Tab1: React.FC = () => {
           <IonRow>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(2) }}/>
+              <IonCheckbox color="secondary" onIonChange= {e => { check(2) }}/>
                 <img src="./assets/sonyXm4.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="sonyXm4Page">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -74,7 +74,7 @@ const Tab1: React.FC = () => {
             </IonCol>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(3) }}/>
+              <IonCheckbox color="secondary" onIonChange= {e => { check(3) }}/>
                 <img src="./assets/sonyEarBudsXm3.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="sonyEarBudsXm3Page">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -93,7 +93,7 @@ const Tab1: React.FC = () => {
           <IonRow>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(4) }}/>
+              <IonCheckbox color="secondary" onIonChange= {e => { check(4) }}/>
                 <img src="./assets/airPodMax.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="airPodsMaxPage">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -110,7 +110,7 @@ const Tab1: React.FC = () => {
             </IonCol>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(5) }} />
+              <IonCheckbox color="secondary" onIonChange= {e => { check(5) }} />
                 <img src="./assets/airPodPro.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="airPodsProPage">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -129,7 +129,7 @@ const Tab1: React.FC = () => {
           <IonRow>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(6) }} />
+              <IonCheckbox color="secondary" onIonChange= {e => { check(6) }} />
                 <img src="./assets/airPod.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="airPodsPage">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -146,7 +146,7 @@ const Tab1: React.FC = () => {
             </IonCol>
             <IonCol>
               <IonCard class="IonCardStyle">
-              <IonCheckbox onIonChange= {e => { check(7) }} />
+              <IonCheckbox color="secondary" onIonChange= {e => { check(7) }} />
                 <img src="./assets/galaxyBuds.jpg" alt="" />
                 <IonRouterLink class="IonRouterLinkStyle" href="galaxyBudsPage">
                   <IonIcon class="IonIconStyle" icon={eye} />
@@ -169,15 +169,14 @@ const Tab1: React.FC = () => {
 };
 
 
-export default Tab1;
+export default HomePage;
 
 async function check(id : number) {
-  if(checkboxList[id] == false) {
+  if(checkboxList[id] === false) {
     checkboxList[id] = true;
   }
   else {
     checkboxList[id] = false;
   }
   await Storage.set({key:'p', value: JSON.stringify(checkboxList)});
-  console.log(checkboxList);
 }

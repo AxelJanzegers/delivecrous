@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonText } from '@ionic/react';
-import './Tab3.css';
+import '../stylePage/infoPage.css';
 
 const AirPodsProPage: React.FC = () => {
   return (

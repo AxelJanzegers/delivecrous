@@ -1,8 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonText } from '@ionic/react';
-import './Tab3.css';
+import '../stylePage/infoPage.css';
 
-const SonyEarBudsXm3Page: React.FC = () => {
+const AirPodsMaxPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,15 +11,15 @@ const SonyEarBudsXm3Page: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="IonContentStyle">
-        <IonImg src="./assets/sonyEarBudsXm3.jpg" />
-        <h1> EarBuds XM3 </h1>
-        <h3> 199.95€ </h3>
+        <IonImg src="./assets/airPodMax.jpg" />
+        <h1> AirPods Max </h1>
+        <h3> 629.00€ </h3>
         <IonText class="IonTextStyle">
-        Les Sony WF-1000XM3 sont des écouteurs intra-auriculaires true wireless. Ils intègrent une fonction de réduction de bruit et se contrôlent par commande tactile.
+        Haut de gamme et haute fidélité, le dernier-né de la gamme AirPods affiche un prix qui en fera ciller plus d’un, mais promet la simplicité et le confort d’utilisation des autres casques sans-fil d’Apple, avec un son hors norme.
          </IonText>
       </IonContent>
     </IonPage>
   );
 };
 
-export default SonyEarBudsXm3Page;
+export default AirPodsMaxPage;

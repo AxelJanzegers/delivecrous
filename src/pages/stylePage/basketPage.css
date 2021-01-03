@@ -1,0 +1,42 @@
+.IonTitleStyle {
+    font-size: 20px;
+    background: linear-gradient(to right, #36ecde, #000000);
+    color: whitesmoke;
+}
+
+.IonItemStyle {
+    margin-top: 5%;
+}
+
+.IonListHeaderStyle {
+    text-align: center;
+    color: blue;
+}
+
+.IonIconStyle2 {
+    text-align: center;
+    height: 125px;
+    width: 125px;
+    color: green;
+}
+
+.IonTextStyle {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.IonContentStyle {
+    text-align: center;
+}
+
+.IonButtonStyle {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.IonButtonStyle2 {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonText } from '@ionic/react';
-import './Tab3.css';
+import '../stylePage/infoPage.css';
 
-const SonyXm4Page: React.FC = () => {
+const GalaxyBudsPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -11,15 +11,15 @@ const SonyXm4Page: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="IonContentStyle">
-        <IonImg src="./assets/sonyXm4.jpg" />
-        <h1> Sony Xm4 </h1>
-        <h3> 349.99€ </h3>
+        <IonImg src="./assets/galaxyBuds.jpg" />
+        <h1> Galaxy Buds </h1>
+        <h3> 149.00€ </h3>
         <IonText class="IonTextStyle">
-        Le Sony WH-1000XM4, nouveau fleuron de la marque japonaise, est un casque à réduction de bruit active. Ce modèle Bluetooth haut de gamme se pilote au travers de commandes tactiles.
+        Les Samsung Galaxy Buds sont des écouteurs Bluetooth true wireless. Leur étui peut se recharger sans fil, notamment via la nouvelle fonctionnalité de partage d'énergie du Galaxy S10.
          </IonText>
       </IonContent>
     </IonPage>
   );
 };
 
-export default SonyXm4Page;
+export default GalaxyBudsPage;

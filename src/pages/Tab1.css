@@ -14,8 +14,8 @@
 
 .IonTitleStyle {
     font-size: 20px;
-    background: linear-gradient(to right, #36ecde, #000000);
     color: whitesmoke;
+    text-align: center;
 }
 
 .IonRouterLinkStyle {
@@ -25,4 +25,8 @@
 
 .IonIconStyle {
     margin-right: 3%;
+}
+
+.ionToolBarStyle {
+    background: linear-gradient(to right, #36ecde, #000000);
 }

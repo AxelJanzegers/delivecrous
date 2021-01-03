@@ -13,6 +13,14 @@ import { IonReactRouter } from '@ionic/react-router';
 import { basket, headset } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
+import Bose700Page from './pages/bose700Page';
+import BoseEarBudsQCPage from './pages/boseEarbudsQCPage';
+import AirPodsMaxPage from './pages/airPodsMaxPage';
+import AirPodsProPage from './pages/airPodsProPage';
+import AirPodsPage from './pages/airPodsPage';
+import SonyEarBudsXm3Page from './pages/sonyEarBudsXm3Page';
+import SonyXm4Page from './pages/sonyXm4Page';
+import GalaxyBudsPage from './pages/galaxyBudsPage';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -40,6 +48,14 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/tab1" component={Tab1} exact={true} />
           <Route path="/tab2" component={Tab2} exact={true} />
+          <Route path="/bose700Page" component={Bose700Page} exact={true} />
+          <Route path="/boseEarBudsQCPage" component={BoseEarBudsQCPage} exact={true} />
+          <Route path="/airPodsMaxPage" component={AirPodsMaxPage} exact={true} />
+          <Route path="/airPodsProPage" component={AirPodsProPage} exact={true} />
+          <Route path="/airPodsPage" component={AirPodsPage} exact={true} />
+          <Route path="/sonyEarBudsXm3Page" component={SonyEarBudsXm3Page} exact={true} />
+          <Route path="/sonyXm4Page" component={SonyXm4Page} exact={true} />
+          <Route path="/galaxyBudsPage" component={GalaxyBudsPage} exact={true} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

@@ -1,19 +1,15 @@
-.IonCardStyle {
-    margin: 0%;
-    width: auto;
-    height: 100%;
-    text-align: center;
-}
-
-.ButtonRight {
-    color: white;
-    float: right;
-    margin-right: 5%;
-    padding-right: 5%;
-}
-
 .IonTitleStyle {
     font-size: 20px;
     background: linear-gradient(to right, #36ecde, #000000);
     color: whitesmoke;
+}
+
+.IonTextStyle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.IonContentStyle {
+    text-align: center;
+    top: 2%;
 }

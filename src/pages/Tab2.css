@@ -12,3 +12,7 @@
     text-align: center;
     color: blue;
 }
+
+.my-custom-class {
+    --background: #222;
+  }
